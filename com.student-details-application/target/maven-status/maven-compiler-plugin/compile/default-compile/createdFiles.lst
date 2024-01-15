@@ -1,0 +1,5 @@
+com\test\controller\StudentController.class
+com\test\DemoMainApplication.class
+com\test\models\Student.class
+com\test\repo\DemoStudentRepo.class
+com\test\service\DemoStudentService.class
