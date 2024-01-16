@@ -40,6 +40,16 @@ public class StudentController {
 		s1.setsCity("Chennai");
 		demoService.createStudent(s1);
 
+		demoService.createStudent(s1);
+		demoService.createStudent(s1);
+		demoService.createStudent(s1);
+		demoService.createStudent(s1);
+		demoService.createStudent(s1);
+		demoService.createStudent(s1);
+		demoService.createStudent(s1);
+		demoService.createStudent(s1);
+		demoService.createStudent(s1);
+
 
 		return "Student Created Succefully";
 
