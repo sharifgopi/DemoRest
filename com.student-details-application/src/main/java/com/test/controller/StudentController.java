@@ -37,10 +37,12 @@ public class StudentController {
 		s1.setsRollNo("kris123");
 		s1.setsName("Krishna");
 		s1.setsBranch("EEE");
-		s1.setsCity("Banglore");
+		s1.setsCity("Chennai");
 		demoService.createStudent(s1);
-		
-		
+
+
+		return "Student Created Succefully";
+
 		return "Student Created Succefully";
 	}
 
@@ -48,9 +50,14 @@ public class StudentController {
 	@GetMapping("/get/{id}")
 	public Student findById(@PathVariable String id) {
 		
-		Object findByStudent =demoService.findByStudent(id);
+		//Object findByStudent =demoService.findByStudent(id);
 		Student s1=(Student)findByStudent;
 		return s1;
+	}
+
+	@DeleteMapping
+	public void deleteById(@PathVariable String id){
+		demoService.deleteById(id);
 	}
 
 }
